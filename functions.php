@@ -88,20 +88,10 @@ if ( function_exists('register_sidebar') )
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
-        'name' => 'rodape1',
-        'before_widget' => '<div class="menu-footer">',
-        'after_widget' => '</div>',
-        'before_title' => '<div class="><h3 class="">',
-        'after_title' => '</h3></div>',
-    )
-);
-
-if ( function_exists('register_sidebar') )
-    register_sidebar(array(
-        'name' => 'rodape2',
+        'name' => 'Formulario-consultor',
         'before_widget' => '<div class="">',
         'after_widget' => '</div>',
-        'before_title' => '<div class="><h3 class="">',
+        'before_title' => '<div class="titulo-consultor"><h3 class="">',
         'after_title' => '</h3></div>',
     )
 );

@@ -53,7 +53,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav navbar-right fale-consultor">
-            <li><a href="#"> FALE COM UM CONSULTOR </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#fale-consultor"> FALE COM UM CONSULTOR </a></li>
           </ul>
           <?php
             $args = array(
@@ -67,3 +67,16 @@
       </div><!-- /.container-fluid -->
     </nav>
   </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="fale-consultor" tabindex="-1" role="dialog" aria-labelledby="Fale Com Consultor" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Formulário consultor') ) :?>
+              <p class="msg-info">Gerencie seus Widgets pelo painel administrativo do Wordpress.</p>
+          <?php endif; ?>
+        </div>
+      </div>
+    </div>
+  </div>

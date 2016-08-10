@@ -188,7 +188,8 @@ footer{
   border-bottom: 0px !important;
 }
 
-.fale-consultor li a:hover{
+.fale-consultor li a:hover,
+.fale-consultor li a:focus{
   background-color: #832161 !important;
   border-bottom: 0px !important;
 }
